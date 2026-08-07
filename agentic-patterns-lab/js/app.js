@@ -101,7 +101,16 @@
   ];
 
   // ---------- state ----------
-  var lang = localStorage.getItem('apl.lang') || 'zh';
+  // 语言优先级：?lang= 参数 > 用户自己切过的选择 > 浏览器语言。
+  // 最后一条很关键：这个站会被分享到中英文两种圈子，
+  // 首次访问就把中文界面丢给英语读者，他们不会去找那个切换按钮，直接就走了。
+  var lang = (function () {
+    var q = new URLSearchParams(location.search).get('lang');
+    if (q === 'en' || q === 'zh') return q;          // 分享链接可强制指定
+    var saved = localStorage.getItem('apl.lang');
+    if (saved === 'en' || saved === 'zh') return saved;
+    return /^zh\b/i.test(navigator.language || '') ? 'zh' : 'en';
+  })();
   // null = follow the viewer's OS preference; 'light'/'dark' = pinned by the toggle
   var theme = localStorage.getItem('apl.theme');
   var pathMode = localStorage.getItem('apl.path') === '1';
