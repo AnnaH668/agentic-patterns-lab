@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="#-在线体验">在线体验</a> ·
+  <a href="https://agentic-patterns-lab.vercel.app"><strong>在线体验</strong></a> ·
   <a href="#-两部分">两部分</a> ·
   <a href="#-快速开始">快速开始</a> ·
   <a href="#-界面">界面</a> ·
@@ -43,9 +43,7 @@
 
 网页部分是纯静态的，**不调任何 API，也不需要任何 key**，打开即用。
 
-<!-- TODO: 部署完成后把下面的 (#) 换成线上链接 -->
-
-👉 **[在线打开](#)**
+### 👉 **[agentic-patterns-lab.vercel.app](https://agentic-patterns-lab.vercel.app)**
 
 不想联网也行：把仓库拉下来直接双击 `agentic-patterns-lab/index.html`，
 完全离线，没有构建步骤，也不需要装任何东西。
