@@ -1,0 +1,5 @@
+# 只有四个依赖，刻意保持最小——每多一个包就多一个装不上的可能
+anthropic>=0.70.0      # Claude 官方 SDK
+python-dotenv>=1.0.0   # 从 .env 读 API key
+pypdf>=5.0.0           # 把 PDF 抽成文本（step0 用）
+numpy>=1.26.0          # 手写向量检索（step4 用，20 行余弦相似度）
