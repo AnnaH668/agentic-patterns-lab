@@ -9,8 +9,8 @@
 <h1 align="center">Agentic Patterns Lab</h1>
 
 <p align="center">
-  An illustrated, bilingual guide to the 21 agent design patterns —<br>
-  paired with a workshop that actually runs.
+  <strong>Understand how AI agents actually work — without being an engineer.</strong><br>
+  An illustrated, bilingual companion to the 21 agent design patterns.
 </p>
 
 <p align="center">
@@ -25,23 +25,38 @@
 
 ## Why this exists
 
-Antonio Gulli's *Agentic Design Patterns* is 482 pages. The problems with reading it
-are concrete: it is long, the diagrams are static, and by chapter twelve you have lost
-the thread. And there is a bigger problem waiting at the end — **you now know the names
-of 21 patterns and still cannot build an agent.**
+Antonio Gulli — a Distinguished Engineer in Google's CTO Office — wrote a 400-page book
+on agentic design patterns and released it free. It is a genuinely good book.
 
-This project answers both. Hence two halves:
+It is also 400 dense pages of English with static diagrams. If you are not an engineer,
+you will probably stop somewhere around chapter three. Which is a shame, because
+everyone is talking about AI agents right now, and *waiting for someone to explain it
+to you* is a bad place to be.
 
-| | What it is | What it solves |
+**This is that book, rebuilt for people who want to understand the field without writing
+code.**
+
+- Every pattern is a diagram you can step through — press play and watch the data move
+- Each one opens with an everyday analogy (reflection = writer and editor; routing =
+  hospital triage; tool use = handing a consultant a phone and a directory), and only
+  then gives you the precise definition
+- **But it is never a dumbed-down summary.** Every pattern keeps the book's own
+  terminology, its page numbers, and links to the primary papers — so you can always go
+  and verify instead of taking my word for it
+
+That last point is the whole design. Most beginner material is shallow; most rigorous
+material is unreadable. This tries to be neither.
+
+### The two halves
+
+| | What it is | Who it's for |
 |---|---|---|
-| **`agentic-patterns-lab/`** | A bilingual interactive web app | **Understanding.** 24 entries, each with a step-through diagram, canonical terminology, and links to the primary papers |
-| **`agent-workshop/`** | A Python project that runs | **Doing.** Nine steps, from one bare API call to an agent that answers questions about a PDF |
+| **`agentic-patterns-lab/`** | A bilingual interactive web app | **Anyone who wants to understand agents.** No coding, no install, no signup — open it and read |
+| **`agent-workshop/`** | A Python project that runs | **Optional.** For when you decide you want to build one yourself |
 
-The two halves point at each other. The web app's build-path page names the exact file,
-the exact command, the output you should see, and the mistake you will probably make.
-Every pattern page tells you which workshop step uses it.
-
-**Read the theory on the left screen, run the code on the right.**
+You can ignore the second half entirely and still get the whole point. But if you go
+there, the two halves connect: the web app's build-path page names the exact file and
+command for each step, and every pattern page tells you which step uses it.
 
 ---
 
@@ -65,6 +80,8 @@ nothing to install.
   actually is / how to pick a framework) and Appendix A on prompting
 - **Diagrams that run** — not pictures. Press `▶` to watch data flow through the pattern,
   or step through it yourself with `←` `→`
+- **An analogy before the definition** — every pattern starts from something you already
+  know, then earns the technical vocabulary
 - **Bilingual, switchable** — every string exists in both languages; Chinese mode keeps
   the English technical terms so you can go and search for them
 - **Canonical terminology + primary sources** — each pattern lists the book's own
@@ -269,5 +286,5 @@ AI wrote for you.
 ---
 
 <p align="center">
-  <sub>The textbook and the exercise book are the same material. That is the whole idea.</sub>
+  <sub>Accessible without being shallow. That is the whole idea.</sub>
 </p>
