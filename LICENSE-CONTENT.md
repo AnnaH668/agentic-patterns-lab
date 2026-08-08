@@ -27,7 +27,10 @@
 ## 这些许可证**不覆盖**的部分
 
 **《Agentic Design Patterns》原书**（Antonio Gulli 著）的任何内容，都不属于本项目，
-本项目也无权对其授权。
+本项目也无权对其授权。完整的第三方权利说明见 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)。
+
+本项目是独立的教育项目，与 Antonio Gulli、Google、Springer Nature 及其关联方
+均无隶属关系，也未获其认可或赞助。
 
 具体来说：
 

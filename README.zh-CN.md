@@ -10,7 +10,12 @@
 
 <p align="center">
   <strong>不写代码，也能真正搞懂 AI Agent 是怎么回事。</strong><br>
-  谷歌总监那本《Agentic Design Patterns》的中英双语图解版。
+  一个独立的开源图解学习项目，中英双语。
+</p>
+
+<p align="center">
+  <sub>启发自 Antonio Gulli《Agentic Design Patterns》中讨论的概念。<br>
+  与原作者、Google、Springer Nature 均无隶属关系，也未获其认可或赞助。</sub>
 </p>
 
 <p align="center">
@@ -33,7 +38,8 @@
 
 这挺可惜的：现在满世界都在聊 AI Agent，而**「等别人解释给我听」不是个好位置**。
 
-**所以这是那本书的重做版，做给想搞懂这个领域、但不写代码的人。**
+**所以有了这个独立的学习项目，做给想搞懂这个领域、但不写代码的人。**
+它不是那本书，不是那本书的某个版本，也不能替代它——它是受同一批概念启发、独立撰写的教学材料。
 
 - **每个模式都是一张能动的图解**——按「运行」，看数据怎么一步步流过去，
   也可以自己按左右键一步步走
@@ -209,6 +215,34 @@ python step0_prepare_book.py /你的/书.pdf
 
 ---
 
+## 来源与归属
+
+本项目引用了 Antonio Gulli《Agentic Design Patterns: A Hands-On Guide to Building
+Intelligent Systems》中讨论的概念与术语。
+
+仓库中的讲解、学习路径、类比、练习、对比、图解以及产品实现，除另有说明外**均为独立撰写**。
+小节结构是本项目自拟的，不沿用原书的章节骨架。
+
+从原书照搬的只有事实性引用信息：模式名称、章节名、规范术语、页码，
+以及各章引用的参考文献列表——放这些正是为了让你能回原书核实。
+
+第三方材料在 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) 中单独列明。
+
+## 内容政策
+
+请不要提交或转发以下内容：
+
+- 原书 PDF
+- 完整章节文本
+- 从书中摘出的大段文字
+- 书籍内页的扫描或截图
+- 第三方图表，除非其许可明确允许再使用
+
+如需引用，应当简短、注明出处，且仅在评述或说明确有必要时使用。
+
+`agent-workshop/step0_prepare_book.py` 会把 PDF 切成本地检索块。它读取的是**你自己**
+提供的文件；输出目录 `data/` 已被 gitignore，从未被提交过。
+
 ## ⚖️ 版权说明
 
 **这一节请读完再 fork。**
@@ -230,8 +264,12 @@ python step0_prepare_book.py /你的/书.pdf
 - **文字内容**（讲解、图解文案、术语表、小测题目）—— [CC BY 4.0](LICENSE-CONTENT.md)，
   注明出处即可自由使用，包括商业用途
 
-许可证只覆盖**本仓库自己的产出**。原书内容不属于本项目，也无法由本项目授权——
-这正是 `data/` 不随仓库发布的原因。详见 [LICENSE-CONTENT.md](LICENSE-CONTENT.md)。
+除另有说明外，这两个许可证**只覆盖本仓库自己的原创产出**。
+第三方书籍、美术资源、截图、引文、代码示例、商标等被引用的材料，
+**不在** MIT 或 CC BY 4.0 的覆盖范围内，除非其自身许可明确允许。
+详见 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)。
+
+原书内容不属于本项目，也无法由本项目授权——这正是 `data/` 从不发布的原因。
 
 ---
 

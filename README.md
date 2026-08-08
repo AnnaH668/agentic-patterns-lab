@@ -10,7 +10,12 @@
 
 <p align="center">
   <strong>Understand how AI agents actually work — without being an engineer.</strong><br>
-  An illustrated, bilingual companion to the 21 agent design patterns.
+  An independent, open-source visual learning companion for agentic design patterns.
+</p>
+
+<p align="center">
+  <sub>Inspired by concepts discussed in Antonio Gulli's <i>Agentic Design Patterns</i>.<br>
+  Not affiliated with, endorsed by, or sponsored by the author, Google, or Springer Nature.</sub>
 </p>
 
 <p align="center">
@@ -33,8 +38,9 @@ you will probably stop somewhere around chapter three. Which is a shame, because
 everyone is talking about AI agents right now, and *waiting for someone to explain it
 to you* is a bad place to be.
 
-**This is that book, rebuilt for people who want to understand the field without writing
-code.**
+**This project is an independent learning companion, written for people who want to
+understand the field without writing code.** It is not the book, an edition of the book,
+or a substitute for it — it is original teaching material inspired by the same concepts.
 
 - Every pattern is a diagram you can step through — press play and watch the data move
 - Each one opens with an everyday analogy (reflection = writer and editor; routing =
@@ -235,6 +241,38 @@ Diagrams scroll horizontally inside their own container; the page never does.
 
 ---
 
+## Source material and attribution
+
+This project references concepts and terminology discussed in Antonio Gulli's
+*Agentic Design Patterns: A Hands-On Guide to Building Intelligent Systems*.
+
+The explanations, learning paths, analogies, exercises, comparisons, diagrams and the
+product implementation in this repository are independently created unless otherwise
+noted. The section structure is this project's own and does not follow the book's
+chapter skeleton.
+
+What is reproduced from the book is factual reference material: pattern names, chapter
+names, canonical terminology, page numbers, and the reference lists each chapter cites —
+all of it there so you can go back to the original and check.
+
+Third-party material is identified in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+
+## Copyright / content policy
+
+Please do not commit or redistribute:
+
+- the original book PDF;
+- full chapter text;
+- large extracted passages from the book;
+- scans or screenshots of interior book pages;
+- third-party diagrams, unless a license clearly permits reuse.
+
+Short quotations, where included, should be limited, attributed, and used only where
+necessary for commentary or explanation.
+
+`agent-workshop/step0_prepare_book.py` turns a PDF into local search chunks. It reads a
+file **you** supply; its output (`data/`) is gitignored and has never been committed.
+
 ## Attribution & licensing
 
 **Please read this section before forking.**
@@ -259,8 +297,13 @@ Dual-licensed:
 - **Content** (explanations, diagram copy, glossary, quiz questions) —
   [CC BY 4.0](LICENSE-CONTENT.md); use it freely, including commercially, with attribution
 
-The licenses cover only this repository's own output. The book's content is not this
-project's to license — which is exactly why `data/` is not published.
+Unless otherwise noted, these cover **only the original material in this repository**.
+Third-party books, artwork, screenshots, quotations, code samples, trademarks and other
+referenced materials are **not** covered by the MIT License or CC BY 4.0 unless their own
+license explicitly says so. See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+
+The book's content is not this project's to license — which is exactly why `data/` is
+never published.
 
 ---
 

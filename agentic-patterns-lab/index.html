@@ -4,6 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Agentic Patterns Lab · 智能体设计模式</title>
+<!-- 元数据刻意不使用「官方 / 授权 / 合作」一类措辞：这是一个独立项目。 -->
+<meta name="description" content="An independent, open-source visual learning companion for agentic design patterns — inspired by concepts discussed in Antonio Gulli's Agentic Design Patterns. Not affiliated with or endorsed by the author, Google, or Springer Nature.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Agentic Patterns Lab">
+<meta property="og:description" content="An independent visual learning companion for agentic design patterns.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Agentic Patterns Lab">
+<meta name="twitter:description" content="An independent visual learning companion for agentic design patterns.">
 <style>
 /* ============================================================
    Agentic Patterns Lab — soft-card learning UI
@@ -499,6 +507,16 @@ body.pathmode .card:not(.core):hover{opacity:.9}
   display:block;margin-top:9px;font-style:normal;
   font-size:12.2px;line-height:1.55;color:var(--ink-3);
 }
+/* 站点页脚：独立项目声明。只在这一处出现，不在每个页面重复。 */
+.sitefoot{
+  margin:44px auto 0;padding:26px 0 40px;
+  border-top:1px solid var(--line);
+}
+.sitefoot p{font-size:13.2px;line-height:1.66;color:var(--ink-2);margin:0 0 8px}
+.sitefoot p:last-child{margin-bottom:0}
+.sitefoot .dim{font-size:12.4px;color:var(--ink-3)}
+.sitefoot b{color:var(--ink);font-weight:700}
+
 /* 模式页 → 实战路径的反向链接 */
 .handson{
   background:var(--t-primary);border:1px solid var(--line);
@@ -707,7 +725,13 @@ code.ic{
 
 <div class="shell">
   <nav class="rail" id="rail" aria-label="模式目录"></nav>
-  <main><div class="wrap" id="view"></div></main>
+  <main>
+    <div class="wrap" id="view"></div>
+    <footer class="sitefoot wrap">
+      <p id="footAbout"></p>
+      <p id="footDisclaim" class="dim"></p>
+    </footer>
+  </main>
 </div>
 
 <div id="tip" role="tooltip"></div>

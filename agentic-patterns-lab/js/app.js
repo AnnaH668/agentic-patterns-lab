@@ -13,7 +13,17 @@
   // ---------- UI strings ----------
   var S = {
     sub:        { zh: '智能体设计模式 · 图解版', en: 'Agentic Design Patterns · Illustrated' },
-    heroEyebrow:{ zh: '基于 Antonio Gulli《Agentic Design Patterns》', en: 'After Antonio Gulli, "Agentic Design Patterns"' },
+    // 措辞刻意用「启发自 / Inspired by」而非「基于 / After」：
+    // 这是一个独立项目，与原作者、Google、Springer Nature 均无隶属或合作关系。
+    heroEyebrow:{ zh: '启发自 Antonio Gulli《Agentic Design Patterns》', en: 'Inspired by Antonio Gulli\'s Agentic Design Patterns' },
+    footAbout: {
+      zh: '<b>Agentic Patterns Lab</b> 是一个独立的开源学习项目，用原创的讲解、图解、类比和练习，帮人更容易理解智能体系统设计。项目启发自 Antonio Gulli《Agentic Design Patterns: A Hands-On Guide to Building Intelligent Systems》中讨论的概念。',
+      en: '<b>Agentic Patterns Lab</b> is an independent, open-source learning project that uses original explanations, visualizations, analogies and exercises to make agentic system design easier to learn. It is inspired by concepts discussed in Antonio Gulli\'s <i>Agentic Design Patterns: A Hands-On Guide to Building Intelligent Systems</i>.'
+    },
+    footDisclaim: {
+      zh: '独立项目，与 Antonio Gulli、Google、Springer Nature 及其关联方均无隶属关系，也未获其认可或赞助。原书及其内容的权利归各自权利人所有；本项目不分发原书。',
+      en: 'Independent project. Not affiliated with, endorsed by, or sponsored by Antonio Gulli, Google, Springer Nature, or their affiliates. The book and its contents remain the property of their respective rights holders; this project does not distribute the book.'
+    },
     heroTitle:  { zh: ['把 AI Agent 拆开，', '直到你能自己搭一个'], en: ['Take agents apart, ', 'until you can build one'] },
     lede: {
       zh: '从「Agent 到底是什么」开始，走完 21 个设计模式，最后按一条实战路径把它们拼成一个能跑的 Agent。每个模式都有可单步播放的图解、原书术语对照和一手论文出处。',
@@ -702,6 +712,10 @@
     document.getElementById('brandSub').textContent = t(S.sub);
     document.getElementById('btnZh').setAttribute('aria-pressed', lang === 'zh');
     document.getElementById('btnEn').setAttribute('aria-pressed', lang === 'en');
+    // 页脚是静态节点，不经过 route() 重绘，所以在这里跟着语言一起更新。
+    // 用 innerHTML 是因为文案里有 <b>/<i>，内容全部来自本文件的常量，不涉及外部输入。
+    document.getElementById('footAbout').innerHTML = t(S.footAbout);
+    document.getElementById('footDisclaim').textContent = t(S.footDisclaim);
     buildRail(); route();
   }
   function setLang(l) {
